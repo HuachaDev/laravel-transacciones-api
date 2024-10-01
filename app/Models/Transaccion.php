@@ -12,11 +12,11 @@ class Transaccion extends Model
     protected $table = 'transacciones';
     
     protected $fillable = [
-        'cuenta_id',          // Clave foránea a cuentas_financieras
-        'tipo_transaccion_id',// Clave foránea a tipos_transaccion
-        'monto',              // Monto de la transacción
-        'created_at',         // Fecha de creación
-        'updated_at',         // Fecha de actualización
+        'cuenta_id',          
+        'tipo_transaccion_id',
+        'monto',              
+        'created_at',         
+        'updated_at',         
     ];
 
     public function cuenta()

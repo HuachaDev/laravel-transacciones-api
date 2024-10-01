@@ -4,7 +4,7 @@
 
 **LARAVEL-TRANSACCIONES-API** es una api desarrollado en Laravel que permite gestionar cuentas y procesar transacciones financieras de manera eficiente. Este proyecto está diseñado para facilitar operaciones comunes como depósitos, retiros y transferencias entre cuentas.
 
-### Funcionalidades Clave
+### Funcionalidades
 
 - **Depósitos:** Facilita la adición de fondos a las cuentas.
 - **Retiros:** Permite a los usuarios retirar dinero de sus cuentas.
@@ -66,6 +66,30 @@ Antes de utilizar la api, es necesario importar la base de datos `transaccionesD
     ```
 
 
+1. **Clonar el repositorio**:
+   ```bash
+   git clone https://github.com/HuachaDev/laravel-transacciones-api.git
+   cd LARAVEL-TRANSACCIONES-API
+    ```
 
-
-
+2. **Instalar las dependencias**:
+    ```bash 
+    composer install
+     ```    
+3. **Instalar las dependencias**:
+    ```bash 
+    cp .env.example .env
+    
+    Editar
+    DB_CONNECTION=mysql
+    DB_HOST=127.0.0.1
+    DB_PORT=3306
+    DB_DATABASE=transaccionesDB
+    DB_USERNAME=root
+    DB_PASSWORD=
+     ```    
+  
+2. **Levantar el servidor local**:
+    ```bash 
+       php artisan serve
+     ```  

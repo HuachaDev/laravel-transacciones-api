@@ -15,7 +15,7 @@ class TransaccionController extends Controller
         'monto' => 'required|numeric|min:0'
     ]);
 
-    // Obtener cuenta de origen usando el id de la ruta
+
     $cuentaOrigen = CuentaFinanciera::findOrFail($id);
     $cuentaDestino = CuentaFinanciera::findOrFail($request->cuentaDestinoId);
 

@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Models\CuentaFinanciera;
-//use App\Models\TipoCuenta;
 use Illuminate\Http\Request;
 
 class CuentaFinancieraController extends Controller
@@ -63,7 +62,7 @@ class CuentaFinancieraController extends Controller
        return response()->json($cuenta);
    }
 
-   // Procesar retiros
+
    public function retirar(Request $request, $id)
    {
     $request->validate(['monto' => 'required|numeric|min:0']);

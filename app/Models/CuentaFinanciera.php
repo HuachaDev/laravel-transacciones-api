@@ -19,7 +19,7 @@ class CuentaFinanciera extends Model
     
     public function transacciones()
     {
-       //return $this->hasMany(Transaccion::class);
+ 
        return $this->hasMany(Transaccion::class, 'cuenta_id');
     }
     
