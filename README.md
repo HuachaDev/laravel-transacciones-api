@@ -18,7 +18,8 @@
 
 ### Importación de la Base de Datos
 
-Antes de utilizar la api, es necesario importar la base de datos `transaccionesDB`. 
+Antes de utilizar la api, es necesario importar la base de datos `transaccionesDB`. Adjunto en el proyecto o
+php artisan migrate  
 
 ## Endpoints
 
@@ -76,7 +77,7 @@ Antes de utilizar la api, es necesario importar la base de datos `transaccionesD
     ```bash 
     composer install
      ```    
-3. **Instalar las dependencias**:
+3. **Copiar  y editar archivo**:
     ```bash 
     cp .env.example .env
     
