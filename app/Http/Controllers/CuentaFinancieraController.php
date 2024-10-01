@@ -10,7 +10,8 @@ class CuentaFinancieraController extends Controller
   
    public function index()
    {
-       $cuentas = CuentaFinanciera::with('tipoCuenta')->get();
+
+       $cuentas = CuentaFinanciera::with('tipoCuenta:id,nombre')->get(['id', 'saldo', 'titularCuenta']);
        return response()->json($cuentas->map(function ($cuenta) {
            return [
                'id' => $cuenta->id,
